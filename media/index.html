@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ejer | Social Media</title>
+	<meta name="description" content="Web Developer | Discord Bot Developer | HTML, CSS, PHP, JS, Node, Discord.js | Memer">
+	<meta name="author" content="ejer">
+	<meta name="google" content="notranslate">
+	<meta name="keywords" content="ejer, html, css, php, js, node, discord.js, portfolio, website, developer, web, projects, contact, discord">
+	<link rel="stylesheet" href="./../assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+	<script type="text/javascript">
+		window.smoothScroll = function(element) {
+			document.querySelector(element).scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("topBtn").style.display = "block";
+			} else {
+				document.getElementById("topBtn").style.display = "none";
+			}
+		}
+	</script>
+	<div class="background"></div>
+	<div class="container">
+		<button onclick="smoothScroll('.container')" id="topBtn" class="topBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<div class="top-panel">
+			<div class="backarrow">
+				<i class="fas fa-arrow-left" onclick="location.href='http://ejer.ga';"></i>
+			</div>
+			<div class="center2">
+				<h1 class="portfolio-title">Portfolio</h1>
+				<button class="explore-btn" onclick="smoothScroll('.mid-panel')" type="button" name="scroll">Explore <i class="fas fa-angle-down"></i></button>
+			</div>
+		</div>
+		<div class="mid-panel">
+			<div class="menu">
+				<button onclick="smoothScroll('.websites')" class="chip">
+					Websites
+				</button>
+				<button onclick="smoothScroll('.bots')" class="chip">
+					Discord Bots
+				</button>
+				<button onclick="smoothScroll('.other')" class="chip">
+					Other
+				</button>
+			</div>
+			<div class="portfolio-container">
+				<div class="websites">
+					<h1 class="portfolio-section-title">Websites</h1>
+					<div class="card">
+						<img src="./../assets/images/card" alt="project photo">
+						<div class="contents">
+							<h4>John Doe</h4>
+							<p>Architect & Engineer</p>
+						</div>
+					</div>
+				</div>
+				<div class="bots">
+					<h1 class="portfolio-section-title">Discord Bots</h1>
+				</div>
+				<div class="other">
+					<h1 class="portfolio-section-title">Other</h1>
+				</div>
+			</div>
+		</div>
+		<div class="bot-panel">
+			<footer class="bot-panel-footer">Copyright © 2019 ejer. All Rights Reserved | Website by <a href="http://ejer.ga/">ejer</a></footer>
+		</div>
+	</div>
+</body>
+
+</html>

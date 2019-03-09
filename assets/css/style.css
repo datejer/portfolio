@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
+
+.background {
+    background-image: url('./../images/bg.jpg');
+    z-index: -10;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+}
+
+footer .fixed {
+    position: fixed;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* width: 35%; */
+    max-width: 75%;
+    min-width: 35%;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+    .center {
+        min-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .buttons {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+.ejer {
+    font-weight: 800;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 4em;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.avatar {
+    animation: float 3s ease-in-out infinite;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black, 0px 0px 10px black;
+    min-width: 100px;
+    max-width: 10%;
+}
+
+.fas {
+    padding: 0.5em;
+    font-size: 2em;
+    width: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    text-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 7px black;
+}
+
+.fa-folder-open {
+    float: left;
+}
+
+.fa-address-book {
+    float: right;
+}
+
+.buttons {
+    margin: 0 auto;
+    max-width: 40%;
+    margin-top: 2.5em;
+}
+
+.fas {
+    position: relative;
+    display: inline-block;
+}
+
+.fas .tooltiptext {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 0.5em;
+    visibility: hidden;
+    width: 120px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-shadow: 0px 0px 2px black;
+}
+
+.fas .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.fas:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    filter: none;
+}
+
+.fas:hover {
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 0px 3px 18px black;
+    transition: all 0.3s ease;
+}
+
+.backarrow>.fas {
+    background-color: transparent;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: none;
+    position: absolute;
+    margin: 0.5em;
+}
+
+.backarrow>.fas:hover {
+    text-shadow: 0px 2px 9px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.explore-btn {
+    background-color: white;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    margin: 0.25em;
+    font-size: 1.25em;
+    border: none;
+    cursor: pointer;
+    padding-right: 0;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0px 0px 7px black;
+    text-shadow: 0px 0px 2px black;
+}
+
+.explore-btn:hover {
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 0px 3px 18px black;
+    transition: all 0.3s ease;
+}
+
+.explore-btn>.fas {
+    background-color: transparent;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: none;
+    padding: 0;
+}
+
+.explore-btn>.fas:hover {
+    transform: none;
+    transition: none;
+}
+
+.top-panel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+.portfolio-title {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.mid-panel {
+    position: relative;
+    background-color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.bot-panel {
+    background-color: transparent;
+    min-height: 20vh;
+    width: 100%;
+    position: relative;
+}
+
+.bot-panel-footer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: transparent;
+    max-height: 1em;
+}
+
+.menu {
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+.chip {
+    border: none;
+    display: inline-block;
+    padding: 1em;
+    height: 3em;
+    font-size: 1em;
+    line-height: 1em;
+    border-radius: 2em;
+    background-color: white;
+    font-weight: 400;
+    box-shadow: 0px 0px 7px black;
+    text-shadow: 0px 0px 2px black;
+    margin-right: 1em;
+}
+
+.chip:hover {
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 0px 3px 18px black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-section-title {
+    text-shadow: 2px 2px 4px #000000;
+    color: black;
+}
+
+.card {
+    box-shadow: 0 2px 7px 0 black;
+    transition: 0.3s;
+    border-radius: 0.2em;
+    max-width: 20%;
+    min-width: 300px;
+    min-height: 400px;
+    max-height: 30%;
+    color: black;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.card:hover {
+    box-shadow: 0 4px 14px 0 black;
+}
+
+.contents {
+    padding: 1em;
+}
+
+.card>img {
+    border-radius: 0.2em 0.2em 0 0;
+}
+
+.center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.topBtn {
+    display: none;
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 7px black;
+}
+
+.topBtn:hover {
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 0px 0px 14px black;
+    transition: all 0.3s ease;
+}
+
+.topBtn>.fas {
+    background-color: transparent;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
