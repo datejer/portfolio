@@ -1,2 +1,2 @@
-# portfolio
-My redesigned, simple and slick portfolio website.
+# Portfolio
+My redesigned, simple and clean portfolio website.
